@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1697439112 source:c:\users\bilmuh\documents\codeblocksprojects\deneme\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1701969567 source:c:\users\etuvr\documents\codeblocksprojects\deneme\main.c
+	<stdio.h>
+	<math.h>
+	<time.h>
+	<string.h>
+	<stdarg.h>
+	<stdlib.h>
+	<ctype.h>
+
+1702226926 source:c:\users\etuvr\documents\codeblocksprojects\my-c-examples\deneme\main.c
+	<stdio.h>
+	<math.h>
+	<time.h>
+	<string.h>
+	<stdarg.h>
+	<stdlib.h>
+	<ctype.h>
+

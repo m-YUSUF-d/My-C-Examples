@@ -676,7 +676,7 @@ float Test(float x)   //Test of pointers of functions
 }
 
 
-int Malloc_Calloc_Realloc() //Memory spaces
+int Malloc_Calloc_Realloc() //Memory spaces to arrays.
 {
     printf("MALLOC : \n");  //Malloc set space in memory but don't clear it.
 
@@ -740,10 +740,28 @@ int Malloc_Calloc_Realloc() //Memory spaces
     puts(text);
 
 
-    //free() clear memory spaces
+    //free() clear memory spaces for entered array.
     free(array);
     free(array2);
     free(text);
+}
+
+
+int CopyTextToAnotherText(char *text , int pos , int lenght , int size)
+{
+    char *text1;
+    char *text2;
+    text1 = (char *) malloc(size * sizeof(char));
+    text2 = (char *) calloc(size , sizeof(char));
+
+    strcpy(text1 , text);
+
+    for(int i = 0 ; i < lenght ; i++)
+    {
+        text2[i] = text1[pos + i];
+    }
+
+    puts(text2);
 }
 
 
@@ -1001,9 +1019,26 @@ int main()
     }
 
 
-    /****/
+    /**CopyTextToAnotherText**/
     {
-        /*
-        */
+    /*
+    int pos , lenght , size;
+
+    printf("Enter your array size : ");
+    scanf(" %d" , &size);
+    getchar();
+
+    char *text = (char *) calloc(size ,sizeof(char));
+
+    printf("Enter your text : ");
+    gets(text);
+
+    printf("Enter position : ");
+    scanf("%d" , &pos);
+    printf("Enter lenght : ");
+    scanf("%d" , &lenght);
+
+    CopyTextToAnotherText(text , pos-1 , lenght , size);
+    */
     }
 }

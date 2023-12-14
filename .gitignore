@@ -1,5 +1,11 @@
 # Prerequisites
 *.d
+*.deneped
+*.layout
+*.exe
+*.o
+*.cbp
+*.json
 
 # Object files
 *.o

@@ -315,7 +315,7 @@ int ReverseText()   //Reverses a char array
 }
 
 
-int FindACharacterInText()  //Searces entered character in text
+int FindACharacterInText()  //Searches entered character in text
 {
     char text[101];
     char wanted;
@@ -364,7 +364,7 @@ char ProtytpeExample()  //Look at the 9. line
 }
 
 
-void Parametres(int a ,int b)   //void ..(valueType .. , valueType .. , ...) {..}
+void Parameters(int a ,int b)   //void ..(valueType .. , valueType .. , ...) {..}
 {
     for(int i = 0 ; i < a ; i++)
     {
@@ -375,7 +375,7 @@ void Parametres(int a ,int b)   //void ..(valueType .. , valueType .. , ...) {..
 }
 
 
-int RecursiveFunctions(int x)   //Enter functions with parametres in return , return ..(.. , .. , ..);
+int RecursiveFunctions(int x)   //Enter functions with parameters in return , return ..(.. , .. , ..);
 {
     printf("%d \n",x);
 
@@ -415,7 +415,7 @@ int Fibonacci(int indis)   //Fibonacci numbers
 }
 
 
-char FindWantedTextInText(int x , char text[] , char a[])   //Find the entered text in text, ntered text have no limit.
+char FindWantedTextInText(int x , char text[] , char a[])   //Find the entered text in text, entered text have no limit.
 {
     int counter = 0;
 
@@ -437,7 +437,7 @@ char FindWantedTextInText(int x , char text[] , char a[])   //Find the entered t
 }
 
 
-int AvaregeOfArraysElements(int numbers[3][3])  //Calculates avarege of the arrays's elements
+int AverageOfArraysElements(int numbers[3][3])  //Calculates average of the arrays's elements
 {
     float result = 0;
 
@@ -607,7 +607,7 @@ int ReverseTheNumbersArray(int n , ...) //Print the numbers of arrays in reverse
 }
 
 
-float AvaregeOfArraysElements2(int *array,int n)    //Send the array's adress
+float AverageOfArraysElements2(int *array,int n)    //Send the array's address
 {
     float sum = 0.0;
     for(int i = 0 ; i < n ; i++)
@@ -617,7 +617,7 @@ float AvaregeOfArraysElements2(int *array,int n)    //Send the array's adress
 }
 
 
-int SendAdress_Variable(int *a , int b) //Different between send adress of variable and send variable
+int SendAddress_Variable(int *a , int b) //Different between send address of variable and send variable
 {
     printf("num1 = %p\tvariable: %d\n" , a , *a);
     printf("num2 = %p\tvariable: %d\n\n" , &b , b);
@@ -637,7 +637,7 @@ int CONST_CAN_CHANGE()  // :D
 }
 
 
-double *FindTheBiggestNumber(double array[] , int n)    //Fİnds the biggest number in array
+double *FindTheBiggestNumber(double array[] , int n)    //Finds the biggest number in array
 {
     double biggestNum = array[0];
     int index = 0;
@@ -653,7 +653,7 @@ double *FindTheBiggestNumber(double array[] , int n)    //Fİnds the biggest num
 }
 
 
-int Adress_PointerExample(int *x , int a , int b)   //Use matris that entered adress
+int Address_PointerExample(int *x , int a , int b)   //Use matris that entered address
 {
     for(int i = 0 ; i < a ; i++)
     {
@@ -666,7 +666,7 @@ int Adress_PointerExample(int *x , int a , int b)   //Use matris that entered ad
 }
 
 
-int PointersOfFunctions(float y)   //Pointers of functions
+float PointersOfFunctions(float y)   //Pointers of functions
 {
     printf("This number is %f." , y);
 }
@@ -676,6 +676,75 @@ float Test(float x)   //Test of pointers of functions
 }
 
 
+int Malloc_Calloc_Realloc() //Memory spaces
+{
+    printf("MALLOC : \n");  //Malloc set space in memory but don't clear it.
+
+    int n;
+    printf("Enter size of array : ");
+    scanf("%d" , &n);
+
+    int *array;
+
+    array = (int *) malloc(sizeof(int)*n);
+
+    if(array == NULL)
+        printf("Inadequate memory space.");
+
+    else
+    {
+        printf("Array is ready to use.\n");
+
+        for(int i = 0 ; i < n ; i++)
+        {
+            *(array+i)= rand();
+            printf("%d \t",*(array+i));
+            printf("%p \n", array+i);
+        }
+    }
+
+
+    printf("\nCALLOC : \n");    //Calloc set space in memory and clear it.
+
+    int m;
+    printf("Enter size of array : ");
+    scanf("%d" , &m);
+
+    int *array2;
+
+    array2 = (int *) calloc(m,sizeof(int));
+
+    if(array2 == NULL)
+        printf("Inadequate memory space.");
+
+    else
+    {
+        printf("Array is ready to use.\n");
+
+        for(int i = 0 ; i < m ; i++)
+        {
+            printf("%d \t",*(array2+i));
+            printf("%p \n", array2+i);
+        }
+    }
+
+
+    printf("\nREALLOC : \n");    //Realloc increase memory space for the array.
+
+    char * text = (char *) malloc(10*sizeof(char));
+    strcpy(text,"Algorithm");
+    puts(text);
+
+    text=(char *) realloc(text,30*sizeof(char));
+    strcpy(text ,"and \nProgramming");
+    puts(text);
+
+
+    //free() clear memory spaces
+    free(array);
+    free(array2);
+    free(text);
+}
 
 
 //********************
@@ -690,7 +759,7 @@ int main()
     }
 
 
-    /**Parametres**/
+    /**Parameters**/
     {
     /*
     int x , y;
@@ -701,7 +770,7 @@ int main()
     printf("Enter the second number :\n");
     scanf(" %d" , &y);
 
-    Parametres(x , y);
+    Parameters(x , y);
     */
     }
 
@@ -758,7 +827,7 @@ int main()
     }
 
 
-    /**AvaregeOfArraysElements**/
+    /**AverageOfArraysElements**/
     {
     /*
     int numbers[3][3];
@@ -767,7 +836,7 @@ int main()
         for(int j =0;j<3;j++)
             scanf("%d", &numbers[i][j]);
 
-    AvaregeOfArraysElements(numbers);
+    AverageOfArraysElements(numbers);
     */
     }
 
@@ -832,7 +901,7 @@ int main()
     }
 
 
-    /**AvaregeOfArraysElements2**/
+    /**AverageOfArraysElements2**/
     {
     /*
     int size;
@@ -848,19 +917,19 @@ int main()
     scanf(" %d" , &numbers[i]);
     }
 
-    printf("%f ", AvaregeOfArraysElements2(numbers,size));
+    printf("%f ", AverageOfArraysElements2(numbers,size));
     */
     }
 
 
-    /**SendAdress_Variable**/
+    /**SendAddress_Variable**/
     {
     /*
     int num1 = 8 , num2 = 9;
     printf("num1 = %p\tvariable: %d\n", &num1 , num1);
     printf("num2 = %p\tvariable: %d\n\n", &num2 , num2);
 
-    SendAdress_Variable(&num1 , num2);  //num1 in adresi gönderilecek ,num2 nin sayı değeri gönderilecek
+    SendAddress_Variable(&num1 , num2);  //num1 in adresi gönderilecek ,num2 nin sayı değeri gönderilecek
     */
     }
 
@@ -886,7 +955,7 @@ int main()
     }
 
 
-    /**Adress_PointerExample**/
+    /**Address_PointerExample**/
     {
     /*
     int size1 , size2;
@@ -908,7 +977,7 @@ int main()
         }
     }
 
-    Adress_PointerExample(matris , size1 , size2);
+    Address_PointerExample(matris , size1 , size2);
     */
     }
 
@@ -916,10 +985,25 @@ int main()
     /**PointersOfFunctions**/
     {
     /*
-    int (*pointer)(float);   //Parantez içine fonksiyonun aldığı değer tipi girilir
+    float (*pointer)(float);   //Parantez içine fonksiyonun aldığı değer tipi girilir
     pointer = &Test;
 
-    PointersOfFunctions( Test(5.6) );
+    PointersOfFunctions( pointer(5.5) );
     */
+    }
+
+
+    /**Malloc_Calloc_Realloc**/
+    {
+    /*
+    Malloc_Calloc_Realloc();
+    */
+    }
+
+
+    /****/
+    {
+        /*
+        */
     }
 }

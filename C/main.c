@@ -419,7 +419,7 @@ char FindWantedTextInText(int x , char text[] , char a[])   //Find the entered t
 {
     int counter = 0;
 
-    if(x == strlen(text) - strlen(a)+2)
+    if(x == strlen(text) - strlen(a) + 2)
         return printf("<%s> bu dizi yoh :(",a);
 
     else if(text[x] == a[0])
@@ -429,7 +429,7 @@ char FindWantedTextInText(int x , char text[] , char a[])   //Find the entered t
             if(text[x+i] == a[i])
                 counter++;
         }
-        if(counter == strlen(a)-1)
+        if(counter == strlen(a) - 1)
             return printf("%d. harfden itibaren %d harf <%s> dir" ,x+1,strlen(a),a);
     }
 
@@ -461,7 +461,7 @@ int FindNumberOf_a(int number ,int counter , char text[100])    //Finds number o
         number++;
     }
 
-    return FindNumberOf_a(number,counter+1,text);
+    return FindNumberOf_a(number , counter + 1 , text);
 }
 
 
@@ -689,7 +689,7 @@ int Malloc_Calloc_Realloc() //Memory spaces to arrays.
     array = (int *) malloc(sizeof(int)*n);
 
     if(array == NULL)
-        printf("Inadequate memory space.");
+        printf("Inadequate memory space.\n");
 
     else
     {
@@ -715,7 +715,7 @@ int Malloc_Calloc_Realloc() //Memory spaces to arrays.
     array2 = (int *) calloc(m,sizeof(int));
 
     if(array2 == NULL)
-        printf("Inadequate memory space.");
+        printf("Inadequate memory space.\n");
 
     else
     {
@@ -736,7 +736,7 @@ int Malloc_Calloc_Realloc() //Memory spaces to arrays.
     puts(text);
 
     text=(char *) realloc(text,30*sizeof(char));
-    strcpy(text ,"and \nProgramming");
+    strcat(text ,"\nand \nProgramming");
     puts(text);
 
 
@@ -787,12 +787,12 @@ float Ort(int n , ...)
 }
 
 
-struct Person
+typedef struct
 {
     char name[50];
     char surname[50];
     int NO;
-};
+}Person;
 
 
 void FolderCommands()
@@ -804,8 +804,8 @@ void FolderCommands()
     if(fp != NULL)
     {
         fprintf(fp , "%s" , "Hello World !");
-        fclose(fp);
     }
+    fclose(fp);
 
 
     //read
@@ -905,7 +905,7 @@ int main()
         gets(text);
         gets(wanted);
 
-        puts(example22(0,text,wanted));
+        puts(FindWantedTextInText(0,text,wanted));
     */
     }
 
@@ -1135,7 +1135,7 @@ int main()
     /**ContactExampleWithMalloc**/
     {
     /*
-        struct Person *person;
+        Person *person;
 
         int size;
         int kontrol = 1;
@@ -1155,7 +1155,7 @@ int main()
             }
         }
 
-        person = (struct Person *) malloc(sizeof(struct Person)*size);
+        person = (Person *) calloc(size , sizeof(Person));
 
         for(int i = 0 ; i < size  ; i++)
         {
@@ -1179,8 +1179,13 @@ int main()
 
     /**FolderCommands**/
     {
-
+    /*
         FolderCommands();
-
+    */
     }
+
+
+
+
+
 }

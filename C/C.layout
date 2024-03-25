@@ -4,7 +4,7 @@
 	<ActiveTarget name="Debug" />
 	<File name="main.c" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="1" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="9841" topLine="116" />
+			<Cursor1 position="23124" topLine="166" />
 		</Cursor>
 		<Folding>
 			<Collapse line="13" />
@@ -46,6 +46,7 @@
 			<Collapse line="361" />
 			<Collapse line="367" />
 			<Collapse line="369" />
+			<Collapse line="378" />
 			<Collapse line="390" />
 			<Collapse line="399" />
 			<Collapse line="407" />
@@ -58,6 +59,8 @@
 			<Collapse line="459" />
 			<Collapse line="468" />
 			<Collapse line="483" />
+			<Collapse line="495" />
+			<Collapse line="500" />
 			<Collapse line="510" />
 			<Collapse line="512" />
 			<Collapse line="517" />
@@ -96,6 +99,7 @@
 			<Collapse line="798" />
 			<Collapse line="804" />
 			<Collapse line="815" />
+			<Collapse line="835" />
 			<Collapse line="837" />
 			<Collapse line="838" />
 			<Collapse line="845" />
@@ -114,6 +118,8 @@
 			<Collapse line="928" />
 			<Collapse line="937" />
 			<Collapse line="938" />
+			<Collapse line="946" />
+			<Collapse line="947" />
 			<Collapse line="959" />
 			<Collapse line="960" />
 			<Collapse line="979" />
@@ -129,6 +135,13 @@
 			<Collapse line="1068" />
 			<Collapse line="1069" />
 			<Collapse line="1079" />
+			<Collapse line="1080" />
+			<Collapse line="1087" />
+			<Collapse line="1088" />
+			<Collapse line="1112" />
+			<Collapse line="1113" />
+			<Collapse line="1136" />
+			<Collapse line="1137" />
 			<Collapse line="1181" />
 			<Collapse line="1182" />
 		</Folding>

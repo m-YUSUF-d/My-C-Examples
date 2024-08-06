@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +23,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -31,6 +33,36 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="Array.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Conditions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DynamicMemoryAllocation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Examples.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="FolderCommands.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Pointer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Protytpe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="RecursiveFunction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Struct.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="VariadicFunction.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

@@ -30,3 +30,40 @@
 	<stdlib.h>
 	<ctype.h>
 
+1722939919 source:c:\users\etuvr\desktop\my-c-examples\c\main.c
+	<math.h>
+	<stdarg.h>
+
+1722933060 source:c:\users\etuvr\desktop\my-c-examples\c\main2.c
+	<stdio.h>
+
+1722934387 source:c:\users\etuvr\desktop\my-c-examples\c\conditions.c
+
+1722934806 source:c:\users\etuvr\desktop\my-c-examples\c\protytpe.c
+
+1722939756 source:c:\users\etuvr\desktop\my-c-examples\c\array.c
+
+1722939763 source:c:\users\etuvr\desktop\my-c-examples\c\pointer.c
+
+1722939743 source:c:\users\etuvr\desktop\my-c-examples\c\recursivefunction.c
+
+1722939918 source:c:\users\etuvr\desktop\my-c-examples\c\examples.c
+	<time.h>
+	<stdlib.h>
+	<ctype.h>
+	<stdio.h>
+	<string.h>
+
+1722940008 source:c:\users\etuvr\desktop\my-c-examples\c\foldercommands.c
+	<stdio.h>
+	<stdlib.h>
+
+1722940065 source:c:\users\etuvr\desktop\my-c-examples\c\variadicfunction.c
+	<stdarg.h>
+
+1722940073 source:c:\users\etuvr\desktop\my-c-examples\c\struct.c
+	<stdarg.h>
+
+1722940093 source:c:\users\etuvr\desktop\my-c-examples\c\dynamicmemoryallocation.c
+	<stdio.h>
+
